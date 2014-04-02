@@ -5,11 +5,11 @@
 # the SWIG interface file instead.
 
 package Ufal::MorphoDiTa;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use base qw(Exporter);
 use base qw(DynaLoader);
 package Ufal::MorphoDiTac;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 bootstrap Ufal::MorphoDiTa;
 package Ufal::MorphoDiTa;
 @EXPORT = qw();
@@ -55,7 +55,7 @@ package Ufal::MorphoDiTa;
 ############# Class : Ufal::MorphoDiTa::Forms ##############
 
 package Ufal::MorphoDiTa::Forms;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -100,7 +100,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedForm ##############
 
 package Ufal::MorphoDiTa::TaggedForm;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -142,7 +142,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedForms ##############
 
 package Ufal::MorphoDiTa::TaggedForms;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -187,7 +187,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedLemma ##############
 
 package Ufal::MorphoDiTa::TaggedLemma;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -229,7 +229,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedLemmas ##############
 
 package Ufal::MorphoDiTa::TaggedLemmas;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -274,7 +274,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedLemmaForms ##############
 
 package Ufal::MorphoDiTa::TaggedLemmaForms;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -316,7 +316,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedLemmasForms ##############
 
 package Ufal::MorphoDiTa::TaggedLemmasForms;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -361,7 +361,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TokenRange ##############
 
 package Ufal::MorphoDiTa::TokenRange;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -403,7 +403,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TokenRanges ##############
 
 package Ufal::MorphoDiTa::TokenRanges;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -448,7 +448,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::Version ##############
 
 package Ufal::MorphoDiTa::Version;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -493,7 +493,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::Tokenizer ##############
 
 package Ufal::MorphoDiTa::Tokenizer;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -531,7 +531,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::Morpho ##############
 
 package Ufal::MorphoDiTa::Morpho;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -571,7 +571,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::Tagger ##############
 
 package Ufal::MorphoDiTa::Tagger;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -607,7 +607,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TagsetConverter ##############
 
 package Ufal::MorphoDiTa::TagsetConverter;
-our $VERSION = '1.0.0.1';
+our $VERSION = '1.0.0.2';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -653,11 +653,11 @@ package Ufal::MorphoDiTa;
 
 =head1 NAME
 
-UFal::MorphoDiTa - bindings to Morphodita library L<http://ufal.mff.cuni.cz/morphodita>.
+Ufal::MorphoDiTa - bindings to Morphodita library L<http://ufal.mff.cuni.cz/morphodita>.
 
 =head1 VERSION
 
-1.0.0.1
+1.0.0.2
 
 =head1 DESCRIPTION
 
