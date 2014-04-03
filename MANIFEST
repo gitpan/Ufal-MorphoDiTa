@@ -3,6 +3,7 @@ Changes
 examples/run_morpho_cli.pl
 examples/run_tagger.pl
 lib/Ufal/MorphoDiTa.pm
+lib/Ufal/MorphoDiTa.pod
 lib/Ufal/MorphoDiTa.xs
 LICENSE
 MANIFEST			This list of files

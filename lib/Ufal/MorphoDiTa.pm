@@ -5,11 +5,11 @@
 # the SWIG interface file instead.
 
 package Ufal::MorphoDiTa;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use base qw(Exporter);
 use base qw(DynaLoader);
 package Ufal::MorphoDiTac;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 bootstrap Ufal::MorphoDiTa;
 package Ufal::MorphoDiTa;
 @EXPORT = qw();
@@ -55,7 +55,7 @@ package Ufal::MorphoDiTa;
 ############# Class : Ufal::MorphoDiTa::Forms ##############
 
 package Ufal::MorphoDiTa::Forms;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -100,7 +100,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedForm ##############
 
 package Ufal::MorphoDiTa::TaggedForm;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -142,7 +142,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedForms ##############
 
 package Ufal::MorphoDiTa::TaggedForms;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -187,7 +187,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedLemma ##############
 
 package Ufal::MorphoDiTa::TaggedLemma;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -229,7 +229,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedLemmas ##############
 
 package Ufal::MorphoDiTa::TaggedLemmas;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -274,7 +274,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedLemmaForms ##############
 
 package Ufal::MorphoDiTa::TaggedLemmaForms;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -316,7 +316,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TaggedLemmasForms ##############
 
 package Ufal::MorphoDiTa::TaggedLemmasForms;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -361,7 +361,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TokenRange ##############
 
 package Ufal::MorphoDiTa::TokenRange;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -403,7 +403,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TokenRanges ##############
 
 package Ufal::MorphoDiTa::TokenRanges;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -448,7 +448,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::Version ##############
 
 package Ufal::MorphoDiTa::Version;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -493,7 +493,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::Tokenizer ##############
 
 package Ufal::MorphoDiTa::Tokenizer;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -531,7 +531,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::Morpho ##############
 
 package Ufal::MorphoDiTa::Morpho;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -571,7 +571,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::Tagger ##############
 
 package Ufal::MorphoDiTa::Tagger;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -607,7 +607,7 @@ sub ACQUIRE {
 ############# Class : Ufal::MorphoDiTa::TagsetConverter ##############
 
 package Ufal::MorphoDiTa::TagsetConverter;
-our $VERSION = '1.0.0.3';
+our $VERSION = '1.0.0.4';
 use vars qw(@ISA %OWNER %ITERATORS %BLESSEDMEMBERS);
 @ISA = qw( Ufal::MorphoDiTa );
 %OWNER = ();
@@ -650,257 +650,4 @@ package Ufal::MorphoDiTa;
                 *TaggedLemmaForms:: *TaggedLemmasForms:: *TokenRange:: *TokenRanges::
                 *Tokenizer:: *Morpho:: *Tagger:: *TagsetConverter:: *Version::);
 %EXPORT_TAGS = (all => [@EXPORT_OK]);
-
-=encoding utf-8
-
-=head1 NAME
-
-Ufal::MorphoDiTa - bindings to Morphodita library L<http://ufal.mff.cuni.cz/morphodita>.
-
-=head1 VERSION
-
-1.0.0.3
-
-=head1 DESCRIPTION
-
-C<Ufal::MorphoDiTa> is a Perl binding to Morphodita library L<http://ufal.mff.cuni.cz/morphodita>.
-
-All classes can be imported into the current namespace using the C<all> export tag.
-
-The bindings is a straightforward conversion of the C<C++> bindings API.
-Vectors do not have native Perl interface, see L<Ufal::MorphoDiTa::Forms>
-source for reference. Static methods and enumerations are available only
-through the module, not through object instance.
-
-=head2 Wrapped C++ API
-
-The C++ API being wrapped follows. For a API reference of the original
-C++ API, see L<http://ufal.mff.cuni.cz/morphodita/api-reference>.
-
-  Helper Structures
-  -----------------
-  
-    typedef vector<string> Forms;
-    
-    struct TaggedForm {
-      string form;
-      string tag;
-    };
-    typedef vector<TaggedForm> TaggedForms;
-    
-    struct TaggedLemma {
-      string lemma;
-      string tag;
-    };
-    typedef vector<TaggedLemma> TaggedLemmas;
-    
-    struct TaggedLemmaForms {
-      string lemma;
-      TaggedForms forms;
-    };
-    typedef vector<TaggedLemmaForms> TaggedLemmasForms;
-    
-    struct TokenRange {
-      size_t start;
-      size_t length;
-    };
-    typedef vector<TokenRange> TokenRanges;
-  
-  
-  Main Classes
-  ------------
-  
-    class Version {
-     public:
-      unsigned major;
-      unsigned minor;
-      unsigned patch;
-    
-      static Version current();
-    };
-    
-    class Tokenizer {
-     public:
-      virtual void setText(const char* text);
-      virtual bool nextSentence(Forms* forms, TokenRanges* tokens);
-    
-      static Tokenizer* newVerticalTokenizer();
-      static Tokenizer* newCzechTokenizer();
-      static Tokenizer* newEnglishTokenizer();
-      static Tokenizer* newGenericTokenizer();
-    };
-    
-    class Morpho {
-     public:
-      static Morpho* load(const char* fname);
-    
-      enum { NO_GUESSER = 0, GUESSER = 1 };
-    
-      virtual int analyze(const char* form, int guesser, TaggedLemmas& lemmas) const;
-      virtual int generate(const char* lemma, const char* tag_wildcard, int guesser, TaggedLemmasForms& forms) const;
-      virtual string rawLemma(const char* lemma) const;
-      virtual string lemmaId(const char* lemma) const;
-    
-      virtual Tokenizer* newTokenizer() const;
-    };
-    
-    class Tagger {
-     public:
-      static Tagger* load(const char* fname);
-    
-      virtual const Morpho* getMorpho() const;
-    
-      virtual void tag(Forms& forms, TaggedLemmas& tags) const;
-    
-      Tokenizer* newTokenizer() const;
-    };
-    
-    class TagsetConverter {
-     public:
-      static TagsetConverter* newIdentityConverter();
-      static TagsetConverter* newPdtToConll2009Converter();
-    
-      virtual void convert(TaggedLemma& lemma) const;
-      virtual void convertAnalyzed(TaggedLemmas& lemmas) const;
-      virtual void convertGenerated(TaggedLemmasForms& forms) const;
-    };
-
-=head1 Examples
-
-=head2 run_morpho_cli
-
-Simple example performing morphological analysis and generation.
-
-  use strict;
-  use open qw(:std :utf8);
-  
-  use Ufal::MorphoDiTa qw(:all);
-  
-  @ARGV >= 1 or die "Usage: $0 dict_file\n";
-  
-  print STDERR "Loading dictionary: ";
-  my $morpho = Morpho::load($ARGV[0]);
-  $morpho or die "Cannot load dictionary from file '$ARGV[0]'\n";
-  print STDERR "done\n";
-  shift @ARGV;
-  
-  my $lemmas = TaggedLemmas->new();
-  my $lemmas_forms = TaggedLemmasForms->new();
-  while (<>) {
-    chomp;
-    my @tokens = split /\s+/, $_, -1;
-    if (@tokens == 1) { #Analyze
-      my $result = $morpho->analyze($tokens[0], $Morpho::GUESSER, $lemmas);
-      my $guesser = $result == $Morpho::GUESSER ? "Guesser " : "";
-  
-      for (my ($i, $size) = (0, $lemmas->size()); $i < $size; $i++) {
-        my $lemma = $lemmas->get($i);
-        printf "%sLemma: %s %s\n", $guesser, $lemma->{lemma}, $lemma->{tag};
-      }
-    } elsif (@tokens == 2) { #Generate
-      my $result = $morpho->generate($tokens[0], $tokens[1], $Morpho::GUESSER, $lemmas_forms);
-      my $guesser = $result == $Morpho::GUESSER ? "Guesser " : "";
-  
-      for (my $i = 0; $i < $lemmas_forms->size(); $i++) {
-        my $lemma_forms = $lemmas_forms->get($i);
-        printf "%sLemma: %s\n", $guesser, $lemma_forms->{lemma};
-        for (my $i = 0; $i < $lemma_forms->{forms}->size(); $i++) {
-          my $form = $lemma_forms->{forms}->get($i);
-          printf "  %s %s\n", $form->{form}, $form->{tag};
-        }
-      }
-    }
-  }
-
-=head2 run_tagger
-
-Simple example performing tokenization and PoS tagging.
-
-  use strict;
-  use open qw(:std :utf8);
-  
-  use Ufal::MorphoDiTa qw(:all);
-  
-  sub encode_entities($) {
-    my ($text) = @_;
-    $text =~ s/[&<>"]/$& eq "&" ? "&amp;" : $& eq "<" ? "&lt;" : $& eq ">" ? "&gt;" : "&quot;"/ge;
-    return $text;
-  }
-  
-  @ARGV >= 1 or die "Usage: $0 tagger_file\n";
-  
-  print STDERR "Loading tagger: ";
-  my $tagger = Tagger::load($ARGV[0]);
-  $tagger or die "Cannot load tagger from file '$ARGV[0]'\n";
-  print STDERR "done\n";
-  shift @ARGV;
-  
-  my $forms = Forms->new();
-  my $lemmas = TaggedLemmas->new();
-  my $tokens = TokenRanges->new();
-  my $tokenizer = $tagger->newTokenizer();
-  $tokenizer or die "No tokenizer is defined for the supplied model!";
-  
-  for (my $not_eof = 1; $not_eof; ) {
-    my $text = '';
-  
-    # Read block
-    while (1) {
-      my $line = <>;
-      last unless ($not_eof = defined $line);
-      $text .= $line;
-      chomp($line);
-      last unless length $line;
-    }
-  
-    # Tag
-    $tokenizer->setText($text);
-    my $t = 0;
-    while ($tokenizer->nextSentence($forms, $tokens)) {
-      $tagger->tag($forms, $lemmas);
-  
-      for (my ($i, $size) = (0, $lemmas->size()); $i < $size; $i++) {
-        my $lemma = $lemmas->get($i);
-        my $token = $tokens->get($i);
-        my ($token_start, $token_length) = ($token->{start}, $token->{length});
-  
-        printf "%s%s<token lemma=\"%s\" tag=\"%s\">%s</token>%s",
-          encode_entities(substr $text, $t, $token_start - $t),
-          $i == 0 ? "<sentence>" : "",
-          encode_entities($lemma->{lemma}),
-          encode_entities($lemma->{tag}),
-          encode_entities(substr $text, $token_start, $token_length),
-          $i + 1 == $size ? "</sentence>" : "";
-        $t = $token_start + $token_length;
-      }
-    }
-    print encode_entities(substr $text, $t);
-  }
-
-=head1 AUTHOR
-
-Milan Straka <straka@ufal.mff.cuni.cz>
-
-Jana Straková <strakova@ufal.mff.cuni.cz>
-
-=head1 COPYRIGHT AND LICENCE
-
-Copyright 2014 by Institute of Formal and Applied Linguistics, Faculty of
-Mathematics and Physics, Charles University in Prague, Czech Republic.
-
-MorphoDiTa is free software: you can redistribute it and/or modify
-it under the terms of the GNU Lesser General Public License as
-published by the Free Software Foundation, either version 3 of
-the License, or (at your option) any later version.
-
-MorphoDiTa is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Lesser General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public License
-along with MorphoDiTa.  If not, see <http://www.gnu.org/licenses/>.
-
-=cut
-
 1;

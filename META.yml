@@ -17,52 +17,52 @@ name: Ufal-MorphoDiTa
 provides:
   Ufal::MorphoDiTa:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::Forms:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::Morpho:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::TaggedForm:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::TaggedForms:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::TaggedLemma:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::TaggedLemmaForms:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::TaggedLemmas:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::TaggedLemmasForms:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::Tagger:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::TagsetConverter:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::TokenRange:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::TokenRanges:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::Tokenizer:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTa::Version:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
   Ufal::MorphoDiTac:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.3
+    version: v1.0.0.4
 resources:
   license: http://opensource.org/licenses/lgpl-license.php
-version: v1.0.0.3
+version: v1.0.0.4
