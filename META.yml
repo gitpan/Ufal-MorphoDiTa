@@ -8,8 +8,8 @@ build_requires:
 configure_requires:
   Module::Build: 0
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
-license: open_source
+generated_by: 'Module::Build version 0.4203, CPAN::Meta::Converter version 2.120921'
+license: lgpl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
@@ -17,52 +17,52 @@ name: Ufal-MorphoDiTa
 provides:
   Ufal::MorphoDiTa:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::Forms:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::Morpho:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::TaggedForm:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::TaggedForms:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::TaggedLemma:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::TaggedLemmaForms:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::TaggedLemmas:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::TaggedLemmasForms:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::Tagger:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::TagsetConverter:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::TokenRange:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::TokenRanges:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::Tokenizer:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTa::Version:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
   Ufal::MorphoDiTac:
     file: lib/Ufal/MorphoDiTa.pm
-    version: v1.0.0.4
+    version: v1.0.0.5
 resources:
-  license: http://opensource.org/licenses/lgpl-license.php
-version: v1.0.0.4
+  license: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
+version: v1.0.0.5

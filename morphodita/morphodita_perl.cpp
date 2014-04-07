@@ -2093,6 +2093,9 @@ SWIGINTERN std::string morpho_raw_lemma(morpho const *self,char const *lemma){
 SWIGINTERN std::string morpho_lemma_id(morpho const *self,char const *lemma){
       return std::string(lemma, self->lemma_id_len(lemma));
     }
+SWIGINTERN std::string morpho_raw_form(morpho const *self,char const *form){
+      return std::string(form, self->raw_form_len(form));
+    }
 SWIGINTERN void tagger_tag(tagger const *self,std::vector< std::string > const &forms,std::vector< tagged_lemma > &tags){
       std::vector<string_piece> string_pieces;
       string_pieces.reserve(forms.size());
@@ -6579,6 +6582,45 @@ XS(_wrap_Morpho_lemmaId) {
 }
 
 
+XS(_wrap_Morpho_rawForm) {
+  {
+    morpho *arg1 = (morpho *) 0 ;
+    char *arg2 = (char *) 0 ;
+    void *argp1 = 0 ;
+    int res1 = 0 ;
+    int res2 ;
+    char *buf2 = 0 ;
+    int alloc2 = 0 ;
+    int argvi = 0;
+    std::string result;
+    dXSARGS;
+    
+    if ((items < 2) || (items > 2)) {
+      SWIG_croak("Usage: Morpho_rawForm(self,form);");
+    }
+    res1 = SWIG_ConvertPtr(ST(0), &argp1,SWIGTYPE_p_morpho, 0 |  0 );
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Morpho_rawForm" "', argument " "1"" of type '" "morpho const *""'"); 
+    }
+    arg1 = reinterpret_cast< morpho * >(argp1);
+    res2 = SWIG_AsCharPtrAndSize(ST(1), &buf2, NULL, &alloc2);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "Morpho_rawForm" "', argument " "2"" of type '" "char const *""'");
+    }
+    arg2 = reinterpret_cast< char * >(buf2);
+    result = morpho_raw_form((morpho const *)arg1,(char const *)arg2);
+    ST(argvi) = SWIG_From_std_string  SWIG_PERL_CALL_ARGS_1(static_cast< std::string >(result)); argvi++ ;
+    
+    if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+    XSRETURN(argvi);
+  fail:
+    
+    if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
+    SWIG_croak_null();
+  }
+}
+
+
 XS(_wrap_Morpho_newTokenizer) {
   {
     morpho *arg1 = (morpho *) 0 ;
@@ -7165,6 +7207,7 @@ static swig_command_info swig_commands[] = {
 {"Ufal::MorphoDiTac::Morpho_generate", _wrap_Morpho_generate},
 {"Ufal::MorphoDiTac::Morpho_rawLemma", _wrap_Morpho_rawLemma},
 {"Ufal::MorphoDiTac::Morpho_lemmaId", _wrap_Morpho_lemmaId},
+{"Ufal::MorphoDiTac::Morpho_rawForm", _wrap_Morpho_rawForm},
 {"Ufal::MorphoDiTac::Morpho_newTokenizer", _wrap_Morpho_newTokenizer},
 {"Ufal::MorphoDiTac::delete_Tagger", _wrap_delete_Tagger},
 {"Ufal::MorphoDiTac::Tagger_load", _wrap_Tagger_load},
@@ -7485,12 +7528,12 @@ XS(SWIG_init) {
   SWIG_TypeClientData(SWIGTYPE_p_std__vectorT_token_range_t, (void*) "Ufal::MorphoDiTa::TokenRanges");
   SWIG_TypeClientData(SWIGTYPE_p_version, (void*) "Ufal::MorphoDiTa::Version");
   SWIG_TypeClientData(SWIGTYPE_p_tokenizer, (void*) "Ufal::MorphoDiTa::Tokenizer");
-  /*@SWIG:/usr/share/swig2.0/perl5/perltypemaps.swg,65,%set_constant@*/ do {
+  /*@SWIG:/opt/swig-2.0.11/share/swig/2.0.11/perl5/perltypemaps.swg,65,%set_constant@*/ do {
     SV *sv = get_sv((char*) SWIG_prefix "Morpho_NO_GUESSER", TRUE | 0x2 | GV_ADDMULTI);
     sv_setsv(sv, SWIG_From_int  SWIG_PERL_CALL_ARGS_1(static_cast< int >(morpho::NO_GUESSER)));
     SvREADONLY_on(sv);
   } while(0) /*@SWIG@*/;
-  /*@SWIG:/usr/share/swig2.0/perl5/perltypemaps.swg,65,%set_constant@*/ do {
+  /*@SWIG:/opt/swig-2.0.11/share/swig/2.0.11/perl5/perltypemaps.swg,65,%set_constant@*/ do {
     SV *sv = get_sv((char*) SWIG_prefix "Morpho_GUESSER", TRUE | 0x2 | GV_ADDMULTI);
     sv_setsv(sv, SWIG_From_int  SWIG_PERL_CALL_ARGS_1(static_cast< int >(morpho::GUESSER)));
     SvREADONLY_on(sv);

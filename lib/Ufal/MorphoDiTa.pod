@@ -83,6 +83,7 @@ C++ API, see L\<http://ufal.mff.cuni.cz/morphodita/api-reference\>.
       virtual int generate(const char* lemma, const char* tag_wildcard, int guesser, TaggedLemmasForms& forms) const;
       virtual string rawLemma(const char* lemma) const;
       virtual string lemmaId(const char* lemma) const;
+      virtual string rawForm(const char* form) const;
     
       virtual Tokenizer* newTokenizer() const;
     };
@@ -131,7 +132,7 @@ Simple example performing morphological analysis and generation.
   my $lemmas_forms = TaggedLemmasForms->new();
   while (<>) {
     chomp;
-    my @tokens = split /\s+/, $_, -1;
+    my @tokens = split /\t/, $_, -1;
     if (@tokens == 1) { #Analyze
       my $result = $morpho->analyze($tokens[0], $Morpho::GUESSER, $lemmas);
       my $guesser = $result == $Morpho::GUESSER ? "Guesser " : "";

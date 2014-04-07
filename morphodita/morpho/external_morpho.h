@@ -18,18 +18,13 @@
 
 #pragma once
 
-#include <memory>
-
 #include "../common.h"
-#include "czech_lemma_addinfo.h"
-#include "morpho_dictionary.h"
-#include "morpho_prefix_guesser.h"
-#include "morpho_statistical_guesser.h"
+#include "morpho.h"
 
 namespace ufal {
 namespace morphodita {
 
-class czech_morpho : public morpho {
+class external_morpho : public morpho {
  public:
   virtual int analyze(string_piece form, morpho::guesser_mode guesser, vector<tagged_lemma>& lemmas) const override;
   virtual int generate(string_piece lemma, const char* tag_wildcard, guesser_mode guesser, vector<tagged_lemma_forms>& forms) const;
@@ -39,16 +34,9 @@ class czech_morpho : public morpho {
   virtual tokenizer* new_tokenizer() const override;
 
   bool load(FILE* f);
+
  private:
-  inline void analyze_special(string_piece form, vector<tagged_lemma>& lemmas) const;
-
-  morpho_dictionary<czech_lemma_addinfo> dictionary;
-  unique_ptr<morpho_prefix_guesser<decltype(dictionary)>> prefix_guesser;
-  unique_ptr<morpho_statistical_guesser> statistical_guesser;
-
-  string unknown_tag = "X@-------------";
-  string number_tag = "C=-------------";
-  string punctuation_tag = "Z:-------------";
+  string unknown_tag;
 };
 
 } // namespace morphodita
