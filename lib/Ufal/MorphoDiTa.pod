@@ -2,15 +2,36 @@
 
 =head1 NAME
 
-Ufal::MorphoDiTa - bindings to Morphodita library L<http://ufal.mff.cuni.cz/morphodita>.
+Ufal::MorphoDiTa - bindings to MorphoDiTa library L<http://ufal.mff.cuni.cz/morphodita>.
+
+=head1 SYNOPSIS
+
+  use Ufal::MorphoDiTa qw(:all);
+
+  my $tagger_file = 'english-morphium-wsj-140407.tagger';
+  my $tagger = Tagger::load($tagger_file) or die "Cannot load tagger from file '$tagger_file'\n";
+  my $forms  = Forms->new(); $forms->push($_) for qw(How are you ?);
+  my $lemmas = TaggedLemmas->new();
+
+  $tagger->tag($forms, $lemmas);
+
+  for my $i (0 .. $lemmas->size()-1) {
+    my $lemma = $lemmas->get($i);
+    printf "token = %s, lemma = %s, tag = %s\n", $forms->get($i), $lemma->{lemma}, $lemma->{tag};
+  }
+
+=head1 REQUIREMENTS
+
+To compile the module, C++11 compiler is needed, either C<g++> 4.7 or newer,
+alternatively C<clang> 3.2 or newer.
 
 =head1 DESCRIPTION
 
-C<Ufal::MorphoDiTa> is a Perl binding to Morphodita library L<http://ufal.mff.cuni.cz/morphodita>.
+C<Ufal::MorphoDiTa> is a Perl binding to MorphoDiTa library L<http://ufal.mff.cuni.cz/morphodita>.
 
 All classes can be imported into the current namespace using the C<all> export tag.
 
-The bindings is a straightforward conversion of the C<C++> bindings API.
+The bindings is a straightforward conversion of the C++ bindings API.
 Vectors do not have native Perl interface, see L<Ufal::MorphoDiTa::Forms>
 source for reference. Static methods and enumerations are available only
 through the module, not through object instance.
@@ -103,6 +124,8 @@ C++ API, see L\<http://ufal.mff.cuni.cz/morphodita/api-reference\>.
      public:
       static TagsetConverter* newIdentityConverter();
       static TagsetConverter* newPdtToConll2009Converter();
+      static TagsetConverter* newStripLemmaCommentConverter(const Morpho& morpho);
+      static TagsetConverter* newStripLemmaIdConverter(const Morpho& morpho);
     
       virtual void convert(TaggedLemma& lemma) const;
       virtual void convertAnalyzed(TaggedLemmas& lemmas) const;

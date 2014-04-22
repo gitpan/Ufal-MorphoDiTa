@@ -7016,6 +7016,68 @@ XS(_wrap_TagsetConverter_newPdtToConll2009Converter) {
 }
 
 
+XS(_wrap_TagsetConverter_newStripLemmaCommentConverter) {
+  {
+    morpho *arg1 = 0 ;
+    void *argp1 ;
+    int res1 = 0 ;
+    int argvi = 0;
+    tagset_converter *result = 0 ;
+    dXSARGS;
+    
+    if ((items < 1) || (items > 1)) {
+      SWIG_croak("Usage: TagsetConverter_newStripLemmaCommentConverter(dictionary);");
+    }
+    res1 = SWIG_ConvertPtr(ST(0), &argp1, SWIGTYPE_p_morpho,  0 );
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "TagsetConverter_newStripLemmaCommentConverter" "', argument " "1"" of type '" "morpho const &""'"); 
+    }
+    if (!argp1) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "TagsetConverter_newStripLemmaCommentConverter" "', argument " "1"" of type '" "morpho const &""'"); 
+    }
+    arg1 = reinterpret_cast< morpho * >(argp1);
+    result = (tagset_converter *)tagset_converter::new_strip_lemma_comment_converter((morpho const &)*arg1);
+    ST(argvi) = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_tagset_converter, SWIG_OWNER | SWIG_SHADOW); argvi++ ;
+    
+    XSRETURN(argvi);
+  fail:
+    
+    SWIG_croak_null();
+  }
+}
+
+
+XS(_wrap_TagsetConverter_newStripLemmaIdConverter) {
+  {
+    morpho *arg1 = 0 ;
+    void *argp1 ;
+    int res1 = 0 ;
+    int argvi = 0;
+    tagset_converter *result = 0 ;
+    dXSARGS;
+    
+    if ((items < 1) || (items > 1)) {
+      SWIG_croak("Usage: TagsetConverter_newStripLemmaIdConverter(dictionary);");
+    }
+    res1 = SWIG_ConvertPtr(ST(0), &argp1, SWIGTYPE_p_morpho,  0 );
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "TagsetConverter_newStripLemmaIdConverter" "', argument " "1"" of type '" "morpho const &""'"); 
+    }
+    if (!argp1) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "TagsetConverter_newStripLemmaIdConverter" "', argument " "1"" of type '" "morpho const &""'"); 
+    }
+    arg1 = reinterpret_cast< morpho * >(argp1);
+    result = (tagset_converter *)tagset_converter::new_strip_lemma_id_converter((morpho const &)*arg1);
+    ST(argvi) = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_tagset_converter, SWIG_OWNER | SWIG_SHADOW); argvi++ ;
+    
+    XSRETURN(argvi);
+  fail:
+    
+    SWIG_croak_null();
+  }
+}
+
+
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
@@ -7220,6 +7282,8 @@ static swig_command_info swig_commands[] = {
 {"Ufal::MorphoDiTac::TagsetConverter_convertGenerated", _wrap_TagsetConverter_convertGenerated},
 {"Ufal::MorphoDiTac::TagsetConverter_newIdentityConverter", _wrap_TagsetConverter_newIdentityConverter},
 {"Ufal::MorphoDiTac::TagsetConverter_newPdtToConll2009Converter", _wrap_TagsetConverter_newPdtToConll2009Converter},
+{"Ufal::MorphoDiTac::TagsetConverter_newStripLemmaCommentConverter", _wrap_TagsetConverter_newStripLemmaCommentConverter},
+{"Ufal::MorphoDiTac::TagsetConverter_newStripLemmaIdConverter", _wrap_TagsetConverter_newStripLemmaIdConverter},
 {0,0}
 };
 /* -----------------------------------------------------------------------------

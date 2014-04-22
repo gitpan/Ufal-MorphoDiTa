@@ -16,14 +16,26 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with MorphoDiTa.  If not, see <http://www.gnu.org/licenses/>.
 
-#include "version.h"
+#pragma once
+
+#include "../common.h"
+#include "tagset_converter.h"
 
 namespace ufal {
 namespace morphodita {
 
-version version::current() {
-  return {1, 2, 0};
-}
+class strip_lemma_id_tagset_converter : public tagset_converter {
+ public:
+  strip_lemma_id_tagset_converter(const morpho& dictionary) : dictionary(dictionary) {}
+
+  virtual void convert(tagged_lemma& tagged_lemma) const override;
+  virtual void convert_analyzed(vector<tagged_lemma>& tagged_lemmas) const override;
+  virtual void convert_generated(vector<tagged_lemma_forms>& forms) const override;
+
+ private:
+  inline bool convert_lemma(string& lemma) const;
+  const morpho& dictionary;
+};
 
 } // namespace morphodita
 } // namespace ufal
