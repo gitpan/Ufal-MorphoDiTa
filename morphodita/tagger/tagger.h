@@ -26,7 +26,7 @@
 namespace ufal {
 namespace morphodita {
 
-class EXPORT_ATTRIBUTES tagger {
+class tagger {
  public:
   virtual ~tagger() {}
 

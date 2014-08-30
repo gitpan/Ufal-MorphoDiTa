@@ -24,9 +24,6 @@
 #include <string>
 #include <vector>
 
-// Import attributes
-#define MORPHODITA_IMPORT
-
 namespace ufal {
 namespace morphodita {
 
@@ -72,7 +69,7 @@ struct token_range {
   token_range(size_t start, size_t length) : start(start), length(length) {}
 };
 
-class MORPHODITA_IMPORT version {
+class version {
  public:
   unsigned major;
   unsigned minor;
@@ -82,7 +79,7 @@ class MORPHODITA_IMPORT version {
   static version current();
 };
 
-class MORPHODITA_IMPORT tokenizer {
+class tokenizer {
  public:
   virtual ~tokenizer() {}
 
@@ -97,7 +94,7 @@ class MORPHODITA_IMPORT tokenizer {
   static tokenizer* new_generic_tokenizer();
 };
 
-class MORPHODITA_IMPORT morpho {
+class morpho {
  public:
   virtual ~morpho() {}
 
@@ -152,7 +149,7 @@ class MORPHODITA_IMPORT morpho {
   virtual tokenizer* new_tokenizer() const = 0;
 };
 
-class MORPHODITA_IMPORT tagger {
+class tagger {
  public:
   virtual ~tagger() {}
 
@@ -172,7 +169,7 @@ class MORPHODITA_IMPORT tagger {
   tokenizer* new_tokenizer() const;
 };
 
-class MORPHODITA_IMPORT tagset_converter {
+class tagset_converter {
  public:
   virtual ~tagset_converter() {}
 

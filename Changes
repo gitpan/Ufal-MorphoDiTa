@@ -1,5 +1,11 @@
 Revision history for Ufal-MorphoDiTa
 
+1.3.0.1 [30 Aug 14]
+        Update MorphoDiTa to version 1.3.0.
+        Add basic tests.
+        Add support for OS X.
+        Silence warnings during compilation.
+
 1.2.0.1 [22 Apr 14]
         Update MorphoDiTa to version 1.2.0.
 

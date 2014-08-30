@@ -33,7 +33,7 @@ struct token_range {
   token_range(size_t start, size_t length) : start(start), length(length) {}
 };
 
-class EXPORT_ATTRIBUTES tokenizer {
+class tokenizer {
  public:
   virtual ~tokenizer() {}
 

@@ -27,10 +27,10 @@ my $builder = $class->new(
         'ExtUtils::CBuilder' => 0,
         'Test::More' => 0,
     },
-    add_to_cleanup       => [ 'Ufal-MorphoDiTa-*' ],
-    extra_compiler_flags => ['-std=c++11', '-fvisibility=hidden'],
-    extra_linker_flags   => ['-s', '-lstdc++' ],
-    include_dirs         => ['morphodita/include' ],
+    add_to_cleanup       => ['Ufal-MorphoDiTa-*'],
+    extra_compiler_flags => ['-x', 'c++', '-std=c++11', '-fvisibility=hidden', '-w', '-Wno-reserved-user-defined-literal'],
+    extra_linker_flags   => ['-lstdc++'],
+    include_dirs         => ['morphodita/include'],
     c_source             => 'morphodita',
 );
 

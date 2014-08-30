@@ -19,11 +19,12 @@
 #pragma once
 
 #include "../common.h"
-#include "binary_decoder.h"
-#include "binary_encoder.h"
 
 namespace ufal {
 namespace morphodita {
+
+class binary_decoder;
+class binary_encoder;
 
 class compressor {
  public:

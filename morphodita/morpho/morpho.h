@@ -48,7 +48,7 @@ struct tagged_lemma_forms {
   tagged_lemma_forms(const string& lemma) : lemma(lemma) {}
 };
 
-class EXPORT_ATTRIBUTES morpho {
+class morpho {
  public:
   virtual ~morpho() {}
 

@@ -33,7 +33,7 @@ static_assert(sizeof(int) >= sizeof(int32_t), "Int must be at least 4B wide!");
 // Assert that we are on a little endian system
 static_assert(__BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__, "Only little endian systems are supported!");
 
-// Define namespace name and open std in it.
+// Define namespace ufal::morphodita.
 namespace ufal {
 namespace morphodita {
 
@@ -57,9 +57,6 @@ inline void runtime_errorf(const char* fmt, ...) {
   fputc('\n', stderr);
   exit(1);
 }
-
-// Export attributes
-#define EXPORT_ATTRIBUTES
 
 } // namespace morphodita
 } // namespace ufal
